@@ -1,0 +1,16 @@
+<?php 
+ 
+ define('HOST','localhost');
+ define('USER','root');
+ define('PASS','');
+ define('DB','imageupload');
+ 
+ $con = mysqli_connect(HOST,USER,PASS,DB) or die('unable to connect to db');
+if($con)
+echo "server connected";
+?>
+/*Here i used Xampp phpmyadmin create a database:imageupload,table:images and table columns are id,url,name
+id->for image id
+name->image name
+url->path of the image in server folder
+and created uploads folder*/
